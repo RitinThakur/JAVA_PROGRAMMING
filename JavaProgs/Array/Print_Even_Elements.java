@@ -3,31 +3,42 @@ package Array;
 import java.util.Scanner;
 
 public class Print_Even_Elements {
-public static void main(String[] args) {
-	Scanner p=new Scanner(System.in);
-	
-	System.out.print("Enter Size of Array: ");
-	int n=p.nextInt();
-	int [] a=new int[n];
-	for(int i=0;i<a.length;i++)
-	{
-		System.out.print("Enter value: ");
-		a[i]=p.nextInt();
+
+	public static void main(String[] args) {
+
+		Scanner p = new Scanner(System.in);
+
+		// Step 1: Accept size of the array
+		System.out.print("Enter Size of Array: ");
+		int n = p.nextInt();
+
+		int[] a = new int[n]; // Array to store integers
+
+		// Step 2: Accept array elements from user
+		for (int i = 0; i < a.length; i++) {
+			System.out.print("Enter value: ");
+			a[i] = p.nextInt();
+		}
+
+		System.out.println();
+
+		// Step 3: Display all elements entered by user
+		System.out.println("Elements Entered are as below:");
+		for (int j = 0; j < a.length; j++) {
+			System.out.println(a[j]);
+		}
+
+		System.out.println();
+
+		// Step 4: Display only even elements from the array
+		System.out.println("Even Elements in array are as below:");
+		for (int k = 0; k < a.length; k++) {
+			if (a[k] % 2 == 0) { // Check if number is divisible by 2
+				System.out.println(a[k]);
+			}
+		}
+
+		// Step 5: Close scanner
+		p.close();
 	}
-	
-	System.out.println();
-	System.out.println("Elements Entered are as below");
-	for(int j=0;j<a.length;j++)
-	{
-		System.out.println(a[j]);
-	}
-	
-	System.out.println();
-	System.out.println("Even Elements in array are as below");
-	for(int k=0;k<a.length;k++)
-	{
-		if(a[k]%2==0)
-		System.out.println(a[k]);
-	}
-}
 }

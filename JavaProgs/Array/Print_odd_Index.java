@@ -3,31 +3,42 @@ package Array;
 import java.util.Scanner;
 
 public class Print_odd_Index {
+
 	public static void main(String[] args) {
-		Scanner p=new Scanner(System.in);
-		
+
+		Scanner p = new Scanner(System.in);
+
+		// Step 1: Accept size of the array
 		System.out.print("Enter Size of Array: ");
-		int n=p.nextInt();
-		int [] a=new int[n];
-		for(int i=0;i<a.length;i++)
-		{
+		int n = p.nextInt();
+
+		int[] a = new int[n]; // Array to store integers
+
+		// Step 2: Accept array elements from user
+		for (int i = 0; i < a.length; i++) {
 			System.out.print("Enter value: ");
-			a[i]=p.nextInt();
+			a[i] = p.nextInt();
 		}
-		
+
 		System.out.println();
-		System.out.println("Elements Entered are as below");
-		for(int j=0;j<a.length;j++)
-		{
+
+		// Step 3: Display all elements entered by user
+		System.out.println("Elements Entered are as below:");
+		for (int j = 0; j < a.length; j++) {
 			System.out.println(a[j]);
 		}
-		
+
 		System.out.println();
-		System.out.println("Even Elements in array are as below");
-		for(int k=0;k<a.length;k++)
-		{
-			if(k%2!=0)
-			System.out.println(a[k]);
+
+		// Step 4: Display elements present at odd index positions
+		System.out.println("Elements at Odd Index in array are as below:");
+		for (int k = 0; k < a.length; k++) {
+			if (k % 2 != 0) { // Check if index is odd
+				System.out.println(a[k]);
+			}
 		}
+
+		// Step 5: Close scanner
+		p.close();
 	}
 }
