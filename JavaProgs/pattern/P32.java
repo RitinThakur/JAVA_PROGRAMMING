@@ -1,5 +1,4 @@
 package pattern;
-
 /**
  * Program Name: P32
  * Package: pattern

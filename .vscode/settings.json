@@ -1,0 +1,25 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 1000,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "My SQL Local",
+            "database": "intro_sql",
+            "username": "root",
+            "password": "Thakur@123",
+            "connectionTimeout": 30
+        }
+    ],
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
